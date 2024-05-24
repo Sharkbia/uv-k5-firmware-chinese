@@ -87,13 +87,13 @@ endif
 ifeq ($(ENABLE_CHINESE_FULL),4)
     ifeq ($(ENABLE_4732),1)
     	 $(info 4732)
-         PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)HS
+         PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)HSs
     else ifeq ($(ENABLE_ENGLISH),1)
         $(info EK)
         PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)EK
     else ifeq ($(ENABLE_PINYIN),1)
         $(info H)
-        PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)H
+        PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)HS
     else
         $(info K)
         PACKED_FILE_SUFFIX := $(PACKED_FILE_SUFFIX)K
